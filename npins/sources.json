@@ -1,0 +1,66 @@
+{
+  "pins": {
+    "AzaharPlus": {
+      "type": "GitRelease",
+      "repository": {
+        "type": "GitHub",
+        "owner": "AzaharPlus",
+        "repo": "AzaharPlus"
+      },
+      "pre_releases": false,
+      "version_upper_bound": null,
+      "release_prefix": null,
+      "submodules": false,
+      "version": "2120.2",
+      "revision": "32bb14f0d26dc48954711137e87e0c8395609f1e",
+      "url": "https://api.github.com/repos/AzaharPlus/AzaharPlus/tarball/2120.2",
+      "hash": "1gdd8gr13rr9wxngv3xrrgnshacxxlrj7gsnajjajfkmsnbpmsha"
+    },
+    "nixpkgs": {
+      "type": "Channel",
+      "name": "nixpkgs-unstable",
+      "url": "https://releases.nixos.org/nixpkgs/nixpkgs-26.05pre906997.a672be65651c/nixexprs.tar.xz",
+      "hash": "1vjmw739x11bmllig28i11rs5rbs1b8483426f2940kyxjp8myfw"
+    },
+    "preservation": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nix-community",
+        "repo": "preservation"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11",
+      "url": "https://github.com/nix-community/preservation/archive/93416f4614ad2dfed5b0dcf12f27e57d27a5ab11.tar.gz",
+      "hash": "0im42hnghfcp0bzlkngkdd7a93fh2dm0y82sllz7ryflm4hkvhlq"
+    },
+    "sops-nix": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "Mic92",
+        "repo": "sops-nix"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "aeb517262102f13683d7a191c7e496b34df8d24c",
+      "url": "https://github.com/Mic92/sops-nix/archive/aeb517262102f13683d7a191c7e496b34df8d24c.tar.gz",
+      "hash": "1pra1yavc8xhgvl53jji8w3f9d8j5shgkfzwav69wyg429n8rlcb"
+    },
+    "treefmt-nix": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "numtide",
+        "repo": "treefmt-nix"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "5b4ee75aeefd1e2d5a1cc43cf6ba65eba75e83e4",
+      "url": "https://github.com/numtide/treefmt-nix/archive/5b4ee75aeefd1e2d5a1cc43cf6ba65eba75e83e4.tar.gz",
+      "hash": "0cr6aj9bk7n3y09lwmfjr7xg1f069332xf4q99z3kj1c1mp0wl82"
+    }
+  },
+  "version": 5
+}

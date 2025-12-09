@@ -1,0 +1,7 @@
+keys:
+  - &radiantzen age1sreznk9y72us98fuwp84rwm5j4mvh9g3df2q6lz45gzw0gt3uvqsgcyn9n
+creation_rules:
+  - path_regex: modules\/secrets\/data\/[^\/]+\.(yaml|json|env|ini)$
+    key_groups:
+      - age:
+          - *radiantzen
