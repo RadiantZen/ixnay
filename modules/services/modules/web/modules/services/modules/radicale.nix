@@ -42,15 +42,15 @@
         };
       };
 
-      # caddy = {
-      #   virtualHosts = {
-      #     "radicale.ecmatthee.com" = {
-      #       extraConfig = ''
-      #         reverse_proxy http://${builtins.toString (builtins.elemAt config.services.radicale.settings.server.hosts 0)}
-      #       '';
-      #     };
-      #   };
-      # };
+      caddy = {
+        virtualHosts = {
+          "radicale.radiantzen.net" = {
+            extraConfig = ''
+              reverse_proxy http://${builtins.toString (builtins.elemAt config.services.radicale.settings.server.hosts 0)}
+            '';
+          };
+        };
+      };
     };
   };
 }

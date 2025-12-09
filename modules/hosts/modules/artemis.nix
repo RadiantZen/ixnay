@@ -42,6 +42,7 @@
           radicale.enable = true;
           vaultwarden.enable = true;
           vikunja.enable = true;
+          miniflux.enable = true;
         };
       };
       machines = {

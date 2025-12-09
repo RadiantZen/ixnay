@@ -44,7 +44,7 @@ in
 
       caddy = {
         virtualHosts = {
-          "vikunja.ecmatthee.com" = {
+          "vikunja.radiantzen.net" = {
             extraConfig = ''
               reverse_proxy http://127.0.0.1:${builtins.toString config.services.vikunja.port}
             '';

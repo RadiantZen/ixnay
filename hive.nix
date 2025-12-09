@@ -145,9 +145,6 @@ in
       };
 
       ixnay = {
-        hosts = {
-          stonewall.enable = true;
-        };
         users = {
           zen.enable = true;
         };

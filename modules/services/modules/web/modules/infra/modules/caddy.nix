@@ -33,6 +33,15 @@
           };
         };
       };
+      cloudflare-dyndns = {
+        enable = true;
+        apiTokenFile = "/persist/cloud.key";
+        domains = [
+          "miniflux.radiantzen.net"
+          "vaultwarden.radiantzen.net"
+          "vikunja.radiantzen.net"
+        ];
+      };
     };
   };
 }

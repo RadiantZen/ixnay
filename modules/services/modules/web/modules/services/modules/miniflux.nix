@@ -25,14 +25,6 @@ in
       };
     };
 
-    security = {
-      acme = {
-        certs = {
-          "miniflux.radiantzen.net" = { };
-        };
-      };
-    };
-
     services = {
       miniflux = {
         enable = true;
@@ -52,22 +44,13 @@ in
         databases = [ db ];
       };
 
-      nginx = {
-        virtualHosts."miniflux.radiantzen.net" = {
-          useACMEHost = "miniflux.radiantzen.net";
-          locations."/" = {
-            proxyPass = "http://${builtins.toString config.services.miniflux.config.LISTEN_ADDR}";
+      caddy = {
+        virtualHosts = {
+          "miniflux.radiantzen.net" = {
+            extraConfig = "reverse_proxy http://${builtins.toString config.services.miniflux.config.LISTEN_ADDR}";
           };
         };
       };
-
-      # caddy = {
-      #   virtualHosts = {
-      #     "miniflux.radiantzen.net" = {
-      #       extraConfig = config.ixnay.services.caddy.reverseProxySSO "http://${builtins.toString config.services.miniflux.config.LISTEN_ADDR}";
-      #     };
-      #   };
-      # };
     };
   };
 }
